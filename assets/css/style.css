@@ -1,3 +1,4 @@
+/* universal selector */
 * {
     margin: 0;
     padding: 0;
@@ -5,16 +6,20 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* element selector */
+/* styles all links */
 a {
     text-decoration: none;
     color: white;
 }
 
+/* styles all links on hover */
 a:hover {
     cursor: pointer;
     color: #493846;
 }
 
+/* gives header background color and new font color */
 header {
   padding: 30px;
   text-align: center;
@@ -22,17 +27,20 @@ header {
   color: #fff;
 }
 
+/* turns navbar into a flexbox with a new background color */
 nav {
     display: flex;
     justify-content: flex-end;
     background-color:#efb5e6
 }
 
+/* navlink styling */
 nav a {
     padding: 14px 20px;
     text-align: center;
 }
 
+/* styles any buttons on page */
 button {
     background-color: #efb5e6;
     border: 2px solid #b47fac;
@@ -40,6 +48,7 @@ button {
     font-size: 20px;
 }
 
+/* styles all secondary headings on webpage */
 h2 {
     text-align: center;
     background-color:#b47fac;
@@ -49,6 +58,17 @@ h2 {
     font-size: 40px;
 }
 
+  /* styles caption on image and allows it to be placed over image with positioning */
+  figcaption {
+    position: absolute;
+    bottom: 10%;
+    background-color:#efb5e6;
+    padding: 30px;
+    font-size: 30px;
+  }
+
+/* id selectors */
+/* styles about section and gives it a background image */
 #about {
     margin: 40px 20px;
     background-image: url("../images/background.png");
@@ -58,6 +78,7 @@ h2 {
     background-position:right;
 }
 
+/* styles heading in about section */
 #about h1 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -67,6 +88,7 @@ h2 {
     color: white;
 }
 
+/* styles paragraph in about section */
 #about p {
     font-size: 25px;
     margin-bottom: 20px;
@@ -76,26 +98,20 @@ h2 {
     color: white;
 }
 
+/* adds flexbox styling to "My Work" section */
 #work {
   display: flex;
   flex-wrap: wrap;
   margin: 2% 8%;
 }
 
+/* class selectors */
 /* styles each flex item in the "My Work" section */
 .card {
     margin: 2%;
     text-align: center;
     border: solid 5px #efb5e6;
     position: relative;
-  }
-
-  figcaption {
-    position: absolute;
-    bottom: 10%;
-    background-color:#efb5e6;
-    padding: 30px;
-    font-size: 30px;
   }
 
   /* makes first flex item larger than the rest */
@@ -117,6 +133,7 @@ h2 {
     opacity: 0.5;
   }
 
+  /* changes image opacity on hover */
   .card img:hover {
     opacity: 1.0;
   }
