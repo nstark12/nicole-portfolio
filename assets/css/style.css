@@ -46,6 +46,7 @@ h2 {
     color: white;
     width: 100%;
     padding: 20px;
+    font-size: 40px;
 }
 
 #about {
@@ -63,16 +64,62 @@ h2 {
     padding: 20px;
     width: 70%;
     background-color:#b47fac;
+    color: white;
 }
 
 #about p {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 20px;
     padding: 20px;
     width: 60%;
     background: rgba(152, 104, 140, 0.7);
     color: white;
 }
+
+#work {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% 8%;
+}
+
+/* styles each flex item in the "My Work" section */
+.card {
+    margin: 2%;
+    text-align: center;
+    border: solid 5px #efb5e6;
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 10%;
+    background-color:#efb5e6;
+    padding: 30px;
+    font-size: 30px;
+  }
+
+  /* makes first flex item larger than the rest */
+.first {
+    width: 100%
+  }
+
+  .second,
+  .third,
+  .fourth,
+  .fifth {
+    flex: 1 1 0;
+  }
+
+  /* styles the images in each card in the "My Work" section */
+  .card img {
+    width: 100%;
+    min-width: 600px;
+    opacity: 0.5;
+  }
+
+  .card img:hover {
+    opacity: 1.0;
+  }
 
 /* media query for smaller screen sizes */
 @media screen and (max-width: 768px) {
