@@ -105,6 +105,27 @@ h2 {
   margin: 2% 8%;
 }
 
+/* makes contact section flexbox */
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2%;
+  }
+
+  /* styles the links in the "contact" section */
+  #contact a {
+    color: black;
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 15px;
+  }
+
+  /* gives the links in the "contact" section a hover element */
+  #contact a:hover {
+    color: #b47fac;
+  }
+
 /* class selectors */
 /* styles each flex item in the "My Work" section */
 .card {
