@@ -40,6 +40,14 @@ button {
     font-size: 20px;
 }
 
+h2 {
+    text-align: center;
+    background-color:#b47fac;
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
 #about {
     margin: 40px 20px;
 }
@@ -53,4 +61,12 @@ button {
     font-size: 20px;
     margin-bottom: 20px;
     width: 60%;
+}
+
+/* media query for smaller screen sizes */
+@media screen and (max-width: 768px) {
+    /* switches navbar from row to column */
+    nav {
+        flex-direction: column;
+    }
 }
