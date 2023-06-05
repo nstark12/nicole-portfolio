@@ -165,4 +165,37 @@ h2 {
     nav {
         flex-direction: column;
     }
+
+    /* decreases font size of figcaption for smaller devices */
+    figcaption {
+        font-size: 15px;
+    }
+
+    /* decreases size of secondary headings for smaller devices */
+    h2 {
+        font-size: 30px;
+    }
+
+    /* decreases size of heading in about section for smaller devices */
+    #about h1 {
+        font-size: 30px;
+        width: 98%;
+    }
+
+    /* decreases size of paragraph in about section for smaller devices */
+    #about p {
+        font-size: 17px;
+        width: 90%;
+    }
+
+    /* decreases font size for links in contact section for smaller devices */
+    #contact a {
+        font-size: 15px;
+    }
+
+    /* decreases the minimum width of images in the work section for smaller devices */
+    .card img {
+        min-width: 300px;
+    }
+
 }
