@@ -1,3 +1,9 @@
+:root {
+  --accent: #b47fac;
+  --accent-2: #efb5e6;
+  --white: #fff;
+}
+
 /* universal selector */
 * {
     margin: 0;
@@ -10,7 +16,7 @@
 /* styles all links */
 a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 /* styles all links on hover */
@@ -23,15 +29,15 @@ a:hover {
 header {
   padding: 30px;
   text-align: center;
-  background: #b47fac;
-  color: #fff;
+  background: var(--accent);
+  color: var(--white);
 }
 
 /* turns navbar into a flexbox with a new background color */
 nav {
     display: flex;
     justify-content: flex-end;
-    background-color:#efb5e6
+    background-color: var(--accent-2);
 }
 
 /* navlink styling */
@@ -42,8 +48,8 @@ nav a {
 
 /* styles any buttons on page */
 button {
-    background-color: #efb5e6;
-    border: 2px solid #b47fac;
+    background-color: var(--accent-2);
+    border: 2px solid var(--accent);
     padding: 4px 15px;
     font-size: 20px;
 }
@@ -51,8 +57,8 @@ button {
 /* styles all secondary headings on webpage */
 h2 {
     text-align: center;
-    background-color:#b47fac;
-    color: white;
+    background-color: var(--accent);
+    color: var(--white);
     width: 100%;
     padding: 20px;
     font-size: 40px;
@@ -62,7 +68,7 @@ h2 {
   figcaption {
     position: absolute;
     bottom: 10%;
-    background-color:#efb5e6;
+    background-color: var(--accent-2);
     padding: 30px;
     font-size: 30px;
   }
@@ -84,8 +90,8 @@ h2 {
     margin-bottom: 20px;
     padding: 20px;
     width: 70%;
-    background-color:#b47fac;
-    color: white;
+    background-color:var (--accent);
+    color: var(--white);
 }
 
 /* styles paragraph in about section */
@@ -131,7 +137,7 @@ h2 {
 .card {
     margin: 2%;
     text-align: center;
-    border: solid 5px #efb5e6;
+    border: solid 5px var(--accent-2);
     position: relative;
   }
 
